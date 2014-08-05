@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C0A3E19198BD9F800F10C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E18198BD9F800F10C7C /* main.m */; };
+		3C0A3E1C198BD9F800F10C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E1B198BD9F800F10C7C /* AppDelegate.m */; };
+		3C0A3E1F198BD9F800F10C7C /* gzk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E1D198BD9F800F10C7C /* gzk.xcdatamodeld */; };
+		3C0A3E25198BD9F800F10C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E23198BD9F800F10C7C /* Main.storyboard */; };
+		3C0A3E27198BD9F800F10C7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E26198BD9F800F10C7C /* Images.xcassets */; };
+		3C0A3E33198BD9F800F10C7C /* gzkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E32198BD9F800F10C7C /* gzkTests.m */; };
+		3C0A3E3E198BDABB00F10C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E3D198BDABB00F10C7C /* ViewController.m */; };
+		3C0A3E42198BE6F800F10C7C /* MylogonAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E41198BE6F800F10C7C /* MylogonAudio.m */; };
+		3C0A3E4A198BE8F600F10C7C /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E45198BE8F600F10C7C /* GameCenterManager.m */; };
+		3C0A3E4B198BE8F600F10C7C /* NSDataAES256.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E47198BE8F600F10C7C /* NSDataAES256.m */; };
+		3C0A3E4C198BE8F600F10C7C /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E49198BE8F600F10C7C /* Reachability.m */; };
+		3C0A3E51198BEA5E00F10C7C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E50198BEA5E00F10C7C /* MenuViewController.m */; };
+		3C0A3E53198BEC8200F10C7C /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E52198BEC8200F10C7C /* GameKit.framework */; };
+		3C0A3E55198BEC8A00F10C7C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E54198BEC8A00F10C7C /* Security.framework */; };
+		3C0A3E57198BEC9E00F10C7C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E56198BEC9E00F10C7C /* SystemConfiguration.framework */; };
+		3C0A3E5C198BF86700F10C7C /* 1.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E58198BF86700F10C7C /* 1.aiff */; };
+		3C0A3E5D198BF86700F10C7C /* 2.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E59198BF86700F10C7C /* 2.aiff */; };
+		3C0A3E5E198BF86700F10C7C /* 3.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E5A198BF86700F10C7C /* 3.aiff */; };
+		3C0A3E5F198BF86700F10C7C /* 4.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E5B198BF86700F10C7C /* 4.aiff */; };
+		3C0A3E61198C131300F10C7C /* RevMobAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E60198C131300F10C7C /* RevMobAds.framework */; };
+		3C0A3E63198C185100F10C7C /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E62198C185100F10C7C /* AdSupport.framework */; };
+		3C0A3E67198C1FBC00F10C7C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */; };
+		3C0A3E69198C310700F10C7C /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E68198C310700F10C7C /* Social.framework */; };
+		3C0A3E6B198C311000F10C7C /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C0A3E6A198C311000F10C7C /* Twitter.framework */; };
+		3C62B31E198E816300445B39 /* Komika Axis.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C62B31D198E7CEB00445B39 /* Komika Axis.ttf */; };
+		3C8DD976198D79B500AC1FD4 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DD975198D79B500AC1FD4 /* TutorialViewController.m */; };
+		3C8DD978198D7C3500AC1FD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */; };
+		3C8DD980198DAAE700AC1FD4 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8DD97F198DAAE700AC1FD4 /* banana.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C0A3E2D198BD9F800F10C7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C0A3E0B198BD9F800F10C7C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C0A3E12198BD9F800F10C7C;
+			remoteInfo = gzk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C0A3E13198BD9F800F10C7C /* GZK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GZK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0A3E17198BD9F800F10C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0A3E18198BD9F800F10C7C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C0A3E1A198BD9F800F10C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3C0A3E1B198BD9F800F10C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3C0A3E1E198BD9F800F10C7C /* gzk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gzk.xcdatamodel; sourceTree = "<group>"; };
+		3C0A3E24198BD9F800F10C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C0A3E26198BD9F800F10C7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3C0A3E2C198BD9F800F10C7C /* gzkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gzkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C0A3E31198BD9F800F10C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C0A3E32198BD9F800F10C7C /* gzkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gzkTests.m; sourceTree = "<group>"; };
+		3C0A3E3C198BDABB00F10C7C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3C0A3E3D198BDABB00F10C7C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3C0A3E40198BE6F800F10C7C /* MylogonAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MylogonAudio.h; sourceTree = "<group>"; };
+		3C0A3E41198BE6F800F10C7C /* MylogonAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MylogonAudio.m; sourceTree = "<group>"; };
+		3C0A3E44198BE8F600F10C7C /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		3C0A3E45198BE8F600F10C7C /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		3C0A3E46198BE8F600F10C7C /* NSDataAES256.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDataAES256.h; sourceTree = "<group>"; };
+		3C0A3E47198BE8F600F10C7C /* NSDataAES256.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDataAES256.m; sourceTree = "<group>"; };
+		3C0A3E48198BE8F600F10C7C /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		3C0A3E49198BE8F600F10C7C /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		3C0A3E4F198BEA5E00F10C7C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		3C0A3E50198BEA5E00F10C7C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3C0A3E52198BEC8200F10C7C /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		3C0A3E54198BEC8A00F10C7C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3C0A3E56198BEC9E00F10C7C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3C0A3E58198BF86700F10C7C /* 1.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 1.aiff; sourceTree = "<group>"; };
+		3C0A3E59198BF86700F10C7C /* 2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 2.aiff; sourceTree = "<group>"; };
+		3C0A3E5A198BF86700F10C7C /* 3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 3.aiff; sourceTree = "<group>"; };
+		3C0A3E5B198BF86700F10C7C /* 4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 4.aiff; sourceTree = "<group>"; };
+		3C0A3E60198C131300F10C7C /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
+		3C0A3E62198C185100F10C7C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		3C0A3E68198C310700F10C7C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		3C0A3E6A198C311000F10C7C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		3C62B31D198E7CEB00445B39 /* Komika Axis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Komika Axis.ttf"; sourceTree = "<group>"; };
+		3C8DD974198D79B500AC1FD4 /* TutorialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialViewController.h; sourceTree = "<group>"; };
+		3C8DD975198D79B500AC1FD4 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
+		3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3C8DD97F198DAAE700AC1FD4 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3C0A3E10198BD9F800F10C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C8DD978198D7C3500AC1FD4 /* QuartzCore.framework in Frameworks */,
+				3C0A3E6B198C311000F10C7C /* Twitter.framework in Frameworks */,
+				3C0A3E69198C310700F10C7C /* Social.framework in Frameworks */,
+				3C0A3E63198C185100F10C7C /* AdSupport.framework in Frameworks */,
+				3C0A3E57198BEC9E00F10C7C /* SystemConfiguration.framework in Frameworks */,
+				3C0A3E55198BEC8A00F10C7C /* Security.framework in Frameworks */,
+				3C0A3E61198C131300F10C7C /* RevMobAds.framework in Frameworks */,
+				3C0A3E53198BEC8200F10C7C /* GameKit.framework in Frameworks */,
+				3C0A3E67198C1FBC00F10C7C /* FacebookSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0A3E29198BD9F800F10C7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C0A3E0A198BD9F800F10C7C = {
+			isa = PBXGroup;
+			children = (
+				3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */,
+				3C0A3E6A198C311000F10C7C /* Twitter.framework */,
+				3C0A3E68198C310700F10C7C /* Social.framework */,
+				3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */,
+				3C0A3E62198C185100F10C7C /* AdSupport.framework */,
+				3C0A3E60198C131300F10C7C /* RevMobAds.framework */,
+				3C0A3E56198BEC9E00F10C7C /* SystemConfiguration.framework */,
+				3C0A3E54198BEC8A00F10C7C /* Security.framework */,
+				3C0A3E52198BEC8200F10C7C /* GameKit.framework */,
+				3C0A3E15198BD9F800F10C7C /* gzk */,
+				3C0A3E2F198BD9F800F10C7C /* gzkTests */,
+				3C0A3E14198BD9F800F10C7C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3C0A3E14198BD9F800F10C7C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A3E13198BD9F800F10C7C /* GZK.app */,
+				3C0A3E2C198BD9F800F10C7C /* gzkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3C0A3E15198BD9F800F10C7C /* gzk */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A3E43198BE8F600F10C7C /* GC Manager */,
+				3C0A3E1A198BD9F800F10C7C /* AppDelegate.h */,
+				3C0A3E1B198BD9F800F10C7C /* AppDelegate.m */,
+				3C0A3E4F198BEA5E00F10C7C /* MenuViewController.h */,
+				3C0A3E50198BEA5E00F10C7C /* MenuViewController.m */,
+				3C0A3E23198BD9F800F10C7C /* Main.storyboard */,
+				3C8DD974198D79B500AC1FD4 /* TutorialViewController.h */,
+				3C8DD975198D79B500AC1FD4 /* TutorialViewController.m */,
+				3C0A3E3C198BDABB00F10C7C /* ViewController.h */,
+				3C0A3E3D198BDABB00F10C7C /* ViewController.m */,
+				3C0A3E3F198BE6F800F10C7C /* mylogonAudio */,
+				3C0A3E26198BD9F800F10C7C /* Images.xcassets */,
+				3C8DD97F198DAAE700AC1FD4 /* banana.png */,
+				3C0A3E1D198BD9F800F10C7C /* gzk.xcdatamodeld */,
+				3C0A3E16198BD9F800F10C7C /* Supporting Files */,
+			);
+			path = gzk;
+			sourceTree = "<group>";
+		};
+		3C0A3E16198BD9F800F10C7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C62B31D198E7CEB00445B39 /* Komika Axis.ttf */,
+				3C0A3E58198BF86700F10C7C /* 1.aiff */,
+				3C0A3E59198BF86700F10C7C /* 2.aiff */,
+				3C0A3E5A198BF86700F10C7C /* 3.aiff */,
+				3C0A3E5B198BF86700F10C7C /* 4.aiff */,
+				3C0A3E17198BD9F800F10C7C /* Info.plist */,
+				3C0A3E18198BD9F800F10C7C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C0A3E2F198BD9F800F10C7C /* gzkTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A3E32198BD9F800F10C7C /* gzkTests.m */,
+				3C0A3E30198BD9F800F10C7C /* Supporting Files */,
+			);
+			path = gzkTests;
+			sourceTree = "<group>";
+		};
+		3C0A3E30198BD9F800F10C7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A3E31198BD9F800F10C7C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3C0A3E3F198BE6F800F10C7C /* mylogonAudio */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A3E40198BE6F800F10C7C /* MylogonAudio.h */,
+				3C0A3E41198BE6F800F10C7C /* MylogonAudio.m */,
+			);
+			path = mylogonAudio;
+			sourceTree = "<group>";
+		};
+		3C0A3E43198BE8F600F10C7C /* GC Manager */ = {
+			isa = PBXGroup;
+			children = (
+				3C0A3E44198BE8F600F10C7C /* GameCenterManager.h */,
+				3C0A3E45198BE8F600F10C7C /* GameCenterManager.m */,
+				3C0A3E46198BE8F600F10C7C /* NSDataAES256.h */,
+				3C0A3E47198BE8F600F10C7C /* NSDataAES256.m */,
+				3C0A3E48198BE8F600F10C7C /* Reachability.h */,
+				3C0A3E49198BE8F600F10C7C /* Reachability.m */,
+			);
+			path = "GC Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3C0A3E12198BD9F800F10C7C /* gzk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0A3E36198BD9F800F10C7C /* Build configuration list for PBXNativeTarget "gzk" */;
+			buildPhases = (
+				3C0A3E0F198BD9F800F10C7C /* Sources */,
+				3C0A3E10198BD9F800F10C7C /* Frameworks */,
+				3C0A3E11198BD9F800F10C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gzk;
+			productName = gzk;
+			productReference = 3C0A3E13198BD9F800F10C7C /* GZK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3C0A3E2B198BD9F800F10C7C /* gzkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C0A3E39198BD9F800F10C7C /* Build configuration list for PBXNativeTarget "gzkTests" */;
+			buildPhases = (
+				3C0A3E28198BD9F800F10C7C /* Sources */,
+				3C0A3E29198BD9F800F10C7C /* Frameworks */,
+				3C0A3E2A198BD9F800F10C7C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C0A3E2E198BD9F800F10C7C /* PBXTargetDependency */,
+			);
+			name = gzkTests;
+			productName = gzkTests;
+			productReference = 3C0A3E2C198BD9F800F10C7C /* gzkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3C0A3E0B198BD9F800F10C7C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = mylogon;
+				TargetAttributes = {
+					3C0A3E12198BD9F800F10C7C = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					3C0A3E2B198BD9F800F10C7C = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 3C0A3E12198BD9F800F10C7C;
+					};
+				};
+			};
+			buildConfigurationList = 3C0A3E0E198BD9F800F10C7C /* Build configuration list for PBXProject "gzk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3C0A3E0A198BD9F800F10C7C;
+			productRefGroup = 3C0A3E14198BD9F800F10C7C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3C0A3E12198BD9F800F10C7C /* gzk */,
+				3C0A3E2B198BD9F800F10C7C /* gzkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3C0A3E11198BD9F800F10C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C62B31E198E816300445B39 /* Komika Axis.ttf in Resources */,
+				3C0A3E5E198BF86700F10C7C /* 3.aiff in Resources */,
+				3C0A3E5D198BF86700F10C7C /* 2.aiff in Resources */,
+				3C0A3E25198BD9F800F10C7C /* Main.storyboard in Resources */,
+				3C0A3E5C198BF86700F10C7C /* 1.aiff in Resources */,
+				3C8DD980198DAAE700AC1FD4 /* banana.png in Resources */,
+				3C0A3E5F198BF86700F10C7C /* 4.aiff in Resources */,
+				3C0A3E27198BD9F800F10C7C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0A3E2A198BD9F800F10C7C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3C0A3E0F198BD9F800F10C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0A3E1F198BD9F800F10C7C /* gzk.xcdatamodeld in Sources */,
+				3C0A3E51198BEA5E00F10C7C /* MenuViewController.m in Sources */,
+				3C0A3E1C198BD9F800F10C7C /* AppDelegate.m in Sources */,
+				3C0A3E4C198BE8F600F10C7C /* Reachability.m in Sources */,
+				3C8DD976198D79B500AC1FD4 /* TutorialViewController.m in Sources */,
+				3C0A3E4A198BE8F600F10C7C /* GameCenterManager.m in Sources */,
+				3C0A3E3E198BDABB00F10C7C /* ViewController.m in Sources */,
+				3C0A3E42198BE6F800F10C7C /* MylogonAudio.m in Sources */,
+				3C0A3E4B198BE8F600F10C7C /* NSDataAES256.m in Sources */,
+				3C0A3E19198BD9F800F10C7C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C0A3E28198BD9F800F10C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0A3E33198BD9F800F10C7C /* gzkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C0A3E2E198BD9F800F10C7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C0A3E12198BD9F800F10C7C /* gzk */;
+			targetProxy = 3C0A3E2D198BD9F800F10C7C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3C0A3E23198BD9F800F10C7C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3C0A3E24198BD9F800F10C7C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3C0A3E34198BD9F800F10C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3C0A3E35198BD9F800F10C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3C0A3E37198BD9F800F10C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = gzk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = GZK;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		3C0A3E38198BD9F800F10C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = gzk/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = GZK;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		3C0A3E3A198BD9F800F10C7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gzk.app/gzk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = gzkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		3C0A3E3B198BD9F800F10C7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/gzk.app/gzk";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = gzkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C0A3E0E198BD9F800F10C7C /* Build configuration list for PBXProject "gzk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0A3E34198BD9F800F10C7C /* Debug */,
+				3C0A3E35198BD9F800F10C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0A3E36198BD9F800F10C7C /* Build configuration list for PBXNativeTarget "gzk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0A3E37198BD9F800F10C7C /* Debug */,
+				3C0A3E38198BD9F800F10C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C0A3E39198BD9F800F10C7C /* Build configuration list for PBXNativeTarget "gzkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C0A3E3A198BD9F800F10C7C /* Debug */,
+				3C0A3E3B198BD9F800F10C7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3C0A3E1D198BD9F800F10C7C /* gzk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3C0A3E1E198BD9F800F10C7C /* gzk.xcdatamodel */,
+			);
+			currentVersion = 3C0A3E1E198BD9F800F10C7C /* gzk.xcdatamodel */;
+			path = gzk.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3C0A3E0B198BD9F800F10C7C /* Project object */;
+}

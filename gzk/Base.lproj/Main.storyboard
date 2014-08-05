@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6205" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="LVB-YS-i5n">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6198"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Komika Axis.ttf">
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+            <string>KomikaAxis</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="CtS-rA-C9T">
+            <objects>
+                <viewController id="LVB-YS-i5n" customClass="MenuViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PCf-gQ-wO7"/>
+                        <viewControllerLayoutGuide type="bottom" id="b3d-qh-BLL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdc-N1-crn">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash finished" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-xh-hL6">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_02" translatesAutoresizingMaskIntoConstraints="NO" id="t7f-Zq-mZp">
+                                <rect key="frame" x="641" y="541" width="363" height="207"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IPf-dh-69n">
+                                <rect key="frame" x="739" y="601" width="265" height="52"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="42"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start" destination="LVB-YS-i5n" eventType="touchUpInside" id="WzA-Hh-ng9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cp6-yK-59a">
+                                <rect key="frame" x="755" y="662" width="151" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Game Centre">
+                                    <color key="titleColor" red="0.8638392857142857" green="0.8638392857142857" blue="0.8638392857142857" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="GC" destination="LVB-YS-i5n" eventType="touchUpInside" id="BB5-IS-UON"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NNn-rl-DZz">
+                                <rect key="frame" x="439" y="-20" width="158" height="118"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="25"/>
+                                <inset key="contentEdgeInsets" minX="20" minY="30" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Tutorial" backgroundImage="wood_06">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tut" destination="LVB-YS-i5n" eventType="touchUpInside" id="Wnj-vW-Vf4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="FeG-ns-7Jx"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad">
+                        <size key="portraitSize" width="768" height="1024"/>
+                        <size key="landscapeSize" width="1024" height="768"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <segue destination="tNS-28-oUa" kind="show" identifier="push" id="v8y-Zz-eHa"/>
+                        <segue destination="BOg-lZ-UCI" kind="show" identifier="tutorial" id="8ZD-2R-58b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="btX-cZ-eVz" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="664" y="387"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="al4-p6-PpE">
+            <objects>
+                <viewController id="tNS-28-oUa" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ovy-za-JrV"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pai-0m-9YL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2R-ov-wK7">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="xaZ-hy-MXI">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zk8-uT-A5d">
+                                <rect key="frame" x="724" y="0.0" width="300" height="768"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="siK-Nf-xxi">
+                                <rect key="frame" x="739" y="457" width="260" height="131"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" backgroundImage="wood_03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer3" destination="tNS-28-oUa" eventType="touchUpInside" id="Vu8-Qx-fvE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOy-3N-22u">
+                                <rect key="frame" x="739" y="195" width="260" height="131"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" backgroundImage="wood_03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer1" destination="tNS-28-oUa" eventType="touchUpInside" id="dsx-Of-xJr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxG-0V-UUP">
+                                <rect key="frame" x="740" y="326" width="260" height="131"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" backgroundImage="wood_03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer2" destination="tNS-28-oUa" eventType="touchUpInside" id="TMX-tl-idQ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_06" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-oa-SHu">
+                                <rect key="frame" x="729" y="-68" width="285" height="234"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbN-Xy-eXN">
+                                <rect key="frame" x="778" y="15" width="184" height="46"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MI5-wl-Yg2">
+                                <rect key="frame" x="774" y="60" width="133" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.2462425046" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong. 6 x 6 = 36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJU-va-gpp">
+                                <rect key="frame" x="775" y="165" width="192" height="31"/>
+                                <color key="backgroundColor" red="0.27730210585605414" green="0.29089479071432817" blue="0.30425824175824179" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.1045179574916858" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_01" translatesAutoresizingMaskIntoConstraints="NO" id="Lrt-I6-wej">
+                                <rect key="frame" x="688" y="582" width="316" height="307"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Push Tokens: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vKa-gF-dSV">
+                                <rect key="frame" x="721" y="610" width="256" height="33"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Time Until Level 2: 00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7o-IS-KNb">
+                                <rect key="frame" x="711" y="702" width="273" height="33"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_04" translatesAutoresizingMaskIntoConstraints="NO" id="OzX-ZZ-U1A">
+                                <rect key="frame" x="513" y="-45" width="121" height="857"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_04" translatesAutoresizingMaskIntoConstraints="NO" id="qZV-n2-q3s">
+                                <rect key="frame" x="72" y="-45" width="121" height="857"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_04-usd" translatesAutoresizingMaskIntoConstraints="NO" id="eB9-8y-eZU">
+                                <rect key="frame" x="294" y="-45" width="121" height="857"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bamboo" translatesAutoresizingMaskIntoConstraints="NO" id="3BV-Kf-Z8B">
+                                <rect key="frame" x="72" y="618" width="112" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="Vwc-DF-OUI">
+                                <rect key="frame" x="298" y="618" width="112" height="82"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newfish" translatesAutoresizingMaskIntoConstraints="NO" id="Vkp-E7-3u4">
+                                <rect key="frame" x="517" y="618" width="112" height="82"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 x 9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XRz-s1-fb9">
+                                <rect key="frame" x="784" y="72" width="205" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.0"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5oJ-mW-jR5">
+                                <rect key="frame" x="-650" y="284" width="600" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GAME OVER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HNZ-Hj-ebW">
+                                        <rect key="frame" x="88" y="12" width="424" height="89"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="74"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6n0-Tg-A4H">
+                                        <rect key="frame" x="214" y="109" width="168" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title=" Game Centre" backgroundImage="wood_03">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="gameCentre" destination="tNS-28-oUa" eventType="touchUpInside" id="gZJ-gW-jXn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="140-7k-bnf">
+                                        <rect key="frame" x="429" y="109" width="151" height="65"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <state key="normal" title="Free Points!" backgroundImage="wood_03">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="freePoints" destination="tNS-28-oUa" eventType="touchUpInside" id="OhE-e8-bw2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJQ-BE-E5d">
+                                        <rect key="frame" x="20" y="108" width="136" height="66"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <state key="normal" title="Restart" backgroundImage="wood_03">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tNS-28-oUa" kind="show" identifier="restart" id="5cG-eG-Qnw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="0.35999999999999999" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aK8-Yc-YPc">
+                                <rect key="frame" x="12" y="5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.11937671703296704" green="0.11937671703296704" blue="0.11937671703296704" alpha="0.20999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="II">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause" destination="tNS-28-oUa" eventType="touchUpInside" id="bRc-If-iPy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRp-EL-2G9">
+                                <rect key="frame" x="-80" y="5" width="52" height="30"/>
+                                <color key="backgroundColor" red="0.11937671699999999" green="0.11937671699999999" blue="0.11937671699999999" alpha="0.20999999999999999" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Menu">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LVB-YS-i5n" kind="show" id="B5O-0A-ajQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEZ-Jt-aw0">
+                                <rect key="frame" x="812" y="654" width="212" height="42"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad">
+                        <size key="portraitSize" width="768" height="1024"/>
+                        <size key="landscapeSize" width="1024" height="768"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="answer1Button" destination="SOy-3N-22u" id="zHS-Ga-5W7"/>
+                        <outlet property="answer2Button" destination="IxG-0V-UUP" id="7ue-MA-GcY"/>
+                        <outlet property="answer3Button" destination="siK-Nf-xxi" id="nWt-Vt-27U"/>
+                        <outlet property="bamboo" destination="3BV-Kf-Z8B" id="gDQ-do-1e5"/>
+                        <outlet property="banana" destination="Vwc-DF-OUI" id="waO-nl-vUk"/>
+                        <outlet property="fish" destination="Vkp-E7-3u4" id="Y1u-nW-aZ9"/>
+                        <outlet property="gameOverView" destination="5oJ-mW-jR5" id="tVd-ha-spk"/>
+                        <outlet property="levelLabel" destination="IbN-Xy-eXN" id="O8r-Lo-Xg4"/>
+                        <outlet property="menuButton" destination="qRp-EL-2G9" id="I62-ZB-spg"/>
+                        <outlet property="pauseButton" destination="aK8-Yc-YPc" id="BW2-L7-BvV"/>
+                        <outlet property="pushLabel" destination="vKa-gF-dSV" id="q2F-RE-Ixl"/>
+                        <outlet property="questionLabel" destination="XRz-s1-fb9" id="Yxu-vB-CYl"/>
+                        <outlet property="scoreLabel" destination="eEZ-Jt-aw0" id="Xr0-4H-CX4"/>
+                        <outlet property="timerLabel" destination="O7o-IS-KNb" id="A0s-HE-GLl"/>
+                        <outlet property="wrongLabel" destination="wJU-va-gpp" id="Z1C-WX-MxL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smN-Hz-nVJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1735" y="387"/>
+        </scene>
+        <!--Tutorial View Controller-->
+        <scene sceneID="Hoc-2k-1gx">
+            <objects>
+                <viewController id="BOg-lZ-UCI" customClass="TutorialViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZDz-l2-Ddc"/>
+                        <viewControllerLayoutGuide type="bottom" id="ptF-73-2hR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="efJ-la-qEL">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="1Wl-Rg-lJs">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                            </imageView>
+                            <view alpha="0.30000001192092896" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nk9-W5-sf5">
+                                <rect key="frame" x="724" y="0.0" width="300" height="768"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="592-i1-sBb">
+                                <rect key="frame" x="740" y="457" width="260" height="131"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Button" backgroundImage="wood_03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer3" destination="BOg-lZ-UCI" eventType="touchUpInside" id="7Uj-z6-dWw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6p-ja-2hQ">
+                                <rect key="frame" x="740" y="326" width="260" height="131"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Button" backgroundImage="wood_03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer2" destination="BOg-lZ-UCI" eventType="touchUpInside" id="awP-PS-KBO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_06" translatesAutoresizingMaskIntoConstraints="NO" id="9lO-Is-JKQ">
+                                <rect key="frame" x="729" y="-68" width="285" height="234"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvR-EA-Bfy">
+                                <rect key="frame" x="786" y="11" width="184" height="46"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Question" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XaP-OE-FH8">
+                                <rect key="frame" x="774" y="56" width="133" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.2462425046" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wrong. 6 x 6 = 36" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q3q-jq-EpE">
+                                <rect key="frame" x="775" y="165" width="192" height="31"/>
+                                <color key="backgroundColor" red="0.27730210589999998" green="0.29089479070000002" blue="0.3042582418" alpha="0.33000000000000002" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" red="1" green="0.10451795749999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_01" translatesAutoresizingMaskIntoConstraints="NO" id="8nY-D8-XAs">
+                                <rect key="frame" x="688" y="582" width="316" height="307"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_04" translatesAutoresizingMaskIntoConstraints="NO" id="qRs-lW-pFH">
+                                <rect key="frame" x="513" y="-45" width="121" height="857"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_04" translatesAutoresizingMaskIntoConstraints="NO" id="zbt-lo-AyO">
+                                <rect key="frame" x="72" y="-45" width="121" height="857"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="wood_04-usd" translatesAutoresizingMaskIntoConstraints="NO" id="rK5-G2-2iH">
+                                <rect key="frame" x="294" y="-45" width="121" height="857"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bamboo" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-5D-kbq">
+                                <rect key="frame" x="72" y="618" width="112" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="banana" translatesAutoresizingMaskIntoConstraints="NO" id="18U-0m-Jht">
+                                <rect key="frame" x="298" y="618" width="112" height="97"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="newfish" translatesAutoresizingMaskIntoConstraints="NO" id="2wz-fR-M7O">
+                                <rect key="frame" x="517" y="618" width="112" height="82"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9 x 9" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivi-PN-iul">
+                                <rect key="frame" x="801" y="78" width="166" height="69"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="2" height="2"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KFs-fQ-Z3P">
+                                <rect key="frame" x="812" y="656" width="212" height="33"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghL-9M-aXx">
+                                <rect key="frame" x="-650" y="213" width="480" height="185"/>
+                                <color key="backgroundColor" red="0.18551753839418314" green="0.18675755137596939" blue="0.63064474587912089" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7x4-Ek-dmB">
+                                <rect key="frame" x="740" y="195" width="260" height="131"/>
+                                <fontDescription key="fontDescription" name="KomikaAxis" family="Komika Axis" pointSize="50"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="10"/>
+                                <size key="titleShadowOffset" width="2" height="2"/>
+                                <state key="normal" title="Button" backgroundImage="wood_03">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="answer1" destination="BOg-lZ-UCI" eventType="touchUpInside" id="fr4-bU-s0Z"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad">
+                        <size key="portraitSize" width="768" height="1024"/>
+                        <size key="landscapeSize" width="1024" height="768"/>
+                    </simulatedScreenMetrics>
+                    <connections>
+                        <outlet property="answer1Button" destination="7x4-Ek-dmB" id="dci-eL-VWG"/>
+                        <outlet property="answer2Button" destination="P6p-ja-2hQ" id="5nT-BC-c5T"/>
+                        <outlet property="answer3Button" destination="592-i1-sBb" id="r9U-Xr-msP"/>
+                        <outlet property="bamboo" destination="zEi-5D-kbq" id="ALP-bh-yIB"/>
+                        <outlet property="banana" destination="18U-0m-Jht" id="MvI-sb-l2z"/>
+                        <outlet property="fish" destination="2wz-fR-M7O" id="kg0-XN-FtY"/>
+                        <outlet property="levelLabel" destination="mvR-EA-Bfy" id="Fdz-Uz-uNT"/>
+                        <outlet property="questionLabel" destination="Ivi-PN-iul" id="62X-Wc-71b"/>
+                        <outlet property="scoreLabel" destination="KFs-fQ-Z3P" id="zrA-kv-8z3"/>
+                        <outlet property="tutView" destination="ghL-9M-aXx" id="him-TR-mbG"/>
+                        <outlet property="wrongLabel" destination="q3q-jq-EpE" id="43Q-CU-DkD"/>
+                        <segue destination="LVB-YS-i5n" kind="show" identifier="menu" id="zPW-xp-gHB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ynu-83-60U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="-533"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="1024" height="768"/>
+        <image name="bamboo" width="492" height="648"/>
+        <image name="banana" width="597" height="412"/>
+        <image name="newfish" width="273" height="208"/>
+        <image name="splash finished" width="2048" height="1536"/>
+        <image name="wood_01" width="545" height="500"/>
+        <image name="wood_02" width="800" height="359"/>
+        <image name="wood_03" width="732" height="500"/>
+        <image name="wood_04" width="142" height="800"/>
+        <image name="wood_04-usd" width="142" height="800"/>
+        <image name="wood_06" width="462" height="500"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="B5O-0A-ajQ"/>
+        <segue reference="v8y-Zz-eHa"/>
+    </inferredMetricsTieBreakers>
+</document>
