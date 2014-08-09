@@ -10,7 +10,7 @@
 #import "GameCenterManager.h"
 #import <RevMobAds/RevMobAds.h>
 
-@interface MenuViewController : UIViewController<GameCenterManagerDelegate, RevMobAdsDelegate>
+@interface MenuViewController : UIViewController<GameCenterManagerDelegate, RevMobAdsDelegate,UIAlertViewDelegate>
 {
     
     NSTimer * adTimer;

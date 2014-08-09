@@ -118,12 +118,18 @@
     tutScreen = 2;
     
     
-    [self performSelector:@selector(swoop) withObject:nil afterDelay:0.5];
     
     // Do any additional setup after loading the view.
 }
 -(BOOL)prefersStatusBarHidden{
     return YES;
+}
+
+-(void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    
+[self performSelector:@selector(swoop) withObject:nil afterDelay:0.5];
+
 }
 
 -(void)swoop{
@@ -674,6 +680,7 @@
                                 options:UIViewAnimationOptionCurveLinear | UIViewAnimationOptionAllowUserInteraction
                              animations:^(void) {
                                  tutView.center = CGPointMake(tutView.center.x + self.view.frame.size.width, tutView.center.y);
+                                 [tutView setAlpha:0];
                                  panda1.center = CGPointMake(panda1.center.x, bamboo.center.y- bamboo.frame.size.height/2);
                                  monkey2.center = CGPointMake(monkey2.center.x, banana.center.y- banana.frame.size.height/2);
                                  penguin3.center = CGPointMake(penguin3.center.x, fish.center.y- fish.frame.size.height/2);

@@ -7,6 +7,7 @@
 //
 
 #import "MenuViewController.h"
+#import "CJMTwitterFollowButton.h"
 
 @interface MenuViewController ()
 
@@ -21,7 +22,16 @@
     [[GameCenterManager sharedManager] setDelegate:self];
     
     adTimer = [NSTimer  scheduledTimerWithTimeInterval:10 target:self selector:@selector(ads) userInfo:nil repeats:YES];
-
+    
+    NSString *deviceType = [UIDevice currentDevice].model;
+    
+    if(![deviceType hasPrefix:@"iPad"])
+    {
+    CJMTwitterFollowButton *largeFollowButton = [[CJMTwitterFollowButton alloc] initWithOrigin:CGPointMake(50, 50)
+                                                                                twitterAccount:@"mylogon_"
+                                                                                       andSize:CJMButtonSizeLarge];
+    [self.view addSubview:largeFollowButton];
+    }
 }
 
 -(void)ads{
@@ -78,6 +88,22 @@
     
     [self performSegueWithIdentifier:@"tutorial" sender:nil];
     
+    
+}
+
+-(IBAction)follow{
+
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Follow" message:@"This will open your twitter client and close GZK. Is this ok?" delegate:self cancelButtonTitle:@"Later" otherButtonTitles:@"Yes", nil];
+    [alert show];
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+
+    if (buttonIndex == 1) {
+    CJMTwitterFollowButton *button = [[CJMTwitterFollowButton alloc]init];
+    [button buttonTapped];
+    }
     
 }
 

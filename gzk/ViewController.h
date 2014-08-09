@@ -80,6 +80,7 @@
     BOOL b2Pressed;
     BOOL b3Pressed;
     BOOL paused;
+    BOOL gameOver;
     
     NSString *answer1;
     NSString *answer2;

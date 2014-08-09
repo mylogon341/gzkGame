@@ -10,7 +10,6 @@
 		3C0A3E19198BD9F800F10C7C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E18198BD9F800F10C7C /* main.m */; };
 		3C0A3E1C198BD9F800F10C7C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E1B198BD9F800F10C7C /* AppDelegate.m */; };
 		3C0A3E1F198BD9F800F10C7C /* gzk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E1D198BD9F800F10C7C /* gzk.xcdatamodeld */; };
-		3C0A3E25198BD9F800F10C7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E23198BD9F800F10C7C /* Main.storyboard */; };
 		3C0A3E27198BD9F800F10C7C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C0A3E26198BD9F800F10C7C /* Images.xcassets */; };
 		3C0A3E33198BD9F800F10C7C /* gzkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E32198BD9F800F10C7C /* gzkTests.m */; };
 		3C0A3E3E198BDABB00F10C7C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3E3D198BDABB00F10C7C /* ViewController.m */; };
@@ -35,6 +34,12 @@
 		3C8DD976198D79B500AC1FD4 /* TutorialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C8DD975198D79B500AC1FD4 /* TutorialViewController.m */; };
 		3C8DD978198D7C3500AC1FD4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */; };
 		3C8DD980198DAAE700AC1FD4 /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C8DD97F198DAAE700AC1FD4 /* banana.png */; };
+		3CB9CFA41996955D0029C151 /* CJMTwitterFollowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CB9CF9E1996955D0029C151 /* CJMTwitterFollowButton.m */; };
+		3CB9CFA51996955D0029C151 /* CJMFollowMeButtonLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB9CFA01996955D0029C151 /* CJMFollowMeButtonLarge.png */; };
+		3CB9CFA61996955D0029C151 /* CJMFollowMeButtonLarge@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB9CFA11996955D0029C151 /* CJMFollowMeButtonLarge@2x.png */; };
+		3CB9CFA71996955D0029C151 /* CJMFollowMeButtonSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB9CFA21996955D0029C151 /* CJMFollowMeButtonSmall.png */; };
+		3CB9CFA81996955D0029C151 /* CJMFollowMeButtonSmall@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CB9CFA31996955D0029C151 /* CJMFollowMeButtonSmall@2x.png */; };
+		3CDBE76D1996D74000B9CAEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CDBE76B1996D74000B9CAEF /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +59,6 @@
 		3C0A3E1A198BD9F800F10C7C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3C0A3E1B198BD9F800F10C7C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3C0A3E1E198BD9F800F10C7C /* gzk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = gzk.xcdatamodel; sourceTree = "<group>"; };
-		3C0A3E24198BD9F800F10C7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3C0A3E26198BD9F800F10C7C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3C0A3E2C198BD9F800F10C7C /* gzkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gzkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C0A3E31198BD9F800F10C7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -78,9 +82,9 @@
 		3C0A3E59198BF86700F10C7C /* 2.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 2.aiff; sourceTree = "<group>"; };
 		3C0A3E5A198BF86700F10C7C /* 3.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 3.aiff; sourceTree = "<group>"; };
 		3C0A3E5B198BF86700F10C7C /* 4.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = 4.aiff; sourceTree = "<group>"; };
-		3C0A3E60198C131300F10C7C /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RevMobAds.framework; sourceTree = "<group>"; };
+		3C0A3E60198C131300F10C7C /* RevMobAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RevMobAds.framework; path = ../RevMobAds.framework; sourceTree = "<group>"; };
 		3C0A3E62198C185100F10C7C /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../FacebookSDK.framework; sourceTree = "<group>"; };
 		3C0A3E68198C310700F10C7C /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		3C0A3E6A198C311000F10C7C /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		3C62B31D198E7CEB00445B39 /* Komika Axis.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Komika Axis.ttf"; sourceTree = "<group>"; };
@@ -88,6 +92,13 @@
 		3C8DD975198D79B500AC1FD4 /* TutorialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialViewController.m; sourceTree = "<group>"; };
 		3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		3C8DD97F198DAAE700AC1FD4 /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		3CB9CF9D1996955D0029C151 /* CJMTwitterFollowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJMTwitterFollowButton.h; sourceTree = "<group>"; };
+		3CB9CF9E1996955D0029C151 /* CJMTwitterFollowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJMTwitterFollowButton.m; sourceTree = "<group>"; };
+		3CB9CFA01996955D0029C151 /* CJMFollowMeButtonLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJMFollowMeButtonLarge.png; sourceTree = "<group>"; };
+		3CB9CFA11996955D0029C151 /* CJMFollowMeButtonLarge@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJMFollowMeButtonLarge@2x.png"; sourceTree = "<group>"; };
+		3CB9CFA21996955D0029C151 /* CJMFollowMeButtonSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CJMFollowMeButtonSmall.png; sourceTree = "<group>"; };
+		3CB9CFA31996955D0029C151 /* CJMFollowMeButtonSmall@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CJMFollowMeButtonSmall@2x.png"; sourceTree = "<group>"; };
+		3CDBE76C1996D74000B9CAEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,15 +131,6 @@
 		3C0A3E0A198BD9F800F10C7C = {
 			isa = PBXGroup;
 			children = (
-				3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */,
-				3C0A3E6A198C311000F10C7C /* Twitter.framework */,
-				3C0A3E68198C310700F10C7C /* Social.framework */,
-				3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */,
-				3C0A3E62198C185100F10C7C /* AdSupport.framework */,
-				3C0A3E60198C131300F10C7C /* RevMobAds.framework */,
-				3C0A3E56198BEC9E00F10C7C /* SystemConfiguration.framework */,
-				3C0A3E54198BEC8A00F10C7C /* Security.framework */,
-				3C0A3E52198BEC8200F10C7C /* GameKit.framework */,
 				3C0A3E15198BD9F800F10C7C /* gzk */,
 				3C0A3E2F198BD9F800F10C7C /* gzkTests */,
 				3C0A3E14198BD9F800F10C7C /* Products */,
@@ -147,16 +149,17 @@
 		3C0A3E15198BD9F800F10C7C /* gzk */ = {
 			isa = PBXGroup;
 			children = (
+				3CB9CF9C1996955D0029C151 /* CJMTwitterFollowButton */,
 				3C0A3E43198BE8F600F10C7C /* GC Manager */,
 				3C0A3E1A198BD9F800F10C7C /* AppDelegate.h */,
 				3C0A3E1B198BD9F800F10C7C /* AppDelegate.m */,
 				3C0A3E4F198BEA5E00F10C7C /* MenuViewController.h */,
 				3C0A3E50198BEA5E00F10C7C /* MenuViewController.m */,
-				3C0A3E23198BD9F800F10C7C /* Main.storyboard */,
 				3C8DD974198D79B500AC1FD4 /* TutorialViewController.h */,
 				3C8DD975198D79B500AC1FD4 /* TutorialViewController.m */,
 				3C0A3E3C198BDABB00F10C7C /* ViewController.h */,
 				3C0A3E3D198BDABB00F10C7C /* ViewController.m */,
+				3CDBE76B1996D74000B9CAEF /* Main.storyboard */,
 				3C0A3E3F198BE6F800F10C7C /* mylogonAudio */,
 				3C0A3E26198BD9F800F10C7C /* Images.xcassets */,
 				3C8DD97F198DAAE700AC1FD4 /* banana.png */,
@@ -169,6 +172,15 @@
 		3C0A3E16198BD9F800F10C7C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C8DD977198D7C3500AC1FD4 /* QuartzCore.framework */,
+				3C0A3E6A198C311000F10C7C /* Twitter.framework */,
+				3C0A3E68198C310700F10C7C /* Social.framework */,
+				3C0A3E66198C1FBC00F10C7C /* FacebookSDK.framework */,
+				3C0A3E62198C185100F10C7C /* AdSupport.framework */,
+				3C0A3E60198C131300F10C7C /* RevMobAds.framework */,
+				3C0A3E56198BEC9E00F10C7C /* SystemConfiguration.framework */,
+				3C0A3E54198BEC8A00F10C7C /* Security.framework */,
+				3C0A3E52198BEC8200F10C7C /* GameKit.framework */,
 				3C62B31D198E7CEB00445B39 /* Komika Axis.ttf */,
 				3C0A3E58198BF86700F10C7C /* 1.aiff */,
 				3C0A3E59198BF86700F10C7C /* 2.aiff */,
@@ -217,6 +229,27 @@
 				3C0A3E49198BE8F600F10C7C /* Reachability.m */,
 			);
 			path = "GC Manager";
+			sourceTree = "<group>";
+		};
+		3CB9CF9C1996955D0029C151 /* CJMTwitterFollowButton */ = {
+			isa = PBXGroup;
+			children = (
+				3CB9CF9D1996955D0029C151 /* CJMTwitterFollowButton.h */,
+				3CB9CF9E1996955D0029C151 /* CJMTwitterFollowButton.m */,
+				3CB9CF9F1996955D0029C151 /* Resources */,
+			);
+			path = CJMTwitterFollowButton;
+			sourceTree = "<group>";
+		};
+		3CB9CF9F1996955D0029C151 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3CB9CFA01996955D0029C151 /* CJMFollowMeButtonLarge.png */,
+				3CB9CFA11996955D0029C151 /* CJMFollowMeButtonLarge@2x.png */,
+				3CB9CFA21996955D0029C151 /* CJMFollowMeButtonSmall.png */,
+				3CB9CFA31996955D0029C151 /* CJMFollowMeButtonSmall@2x.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +301,7 @@
 				TargetAttributes = {
 					3C0A3E12198BD9F800F10C7C = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = F9ZXT3C227;
 					};
 					3C0A3E2B198BD9F800F10C7C = {
 						CreatedOnToolsVersion = 6.0;
@@ -299,14 +333,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CB9CFA61996955D0029C151 /* CJMFollowMeButtonLarge@2x.png in Resources */,
 				3C62B31E198E816300445B39 /* Komika Axis.ttf in Resources */,
 				3C0A3E5E198BF86700F10C7C /* 3.aiff in Resources */,
+				3CDBE76D1996D74000B9CAEF /* Main.storyboard in Resources */,
 				3C0A3E5D198BF86700F10C7C /* 2.aiff in Resources */,
-				3C0A3E25198BD9F800F10C7C /* Main.storyboard in Resources */,
 				3C0A3E5C198BF86700F10C7C /* 1.aiff in Resources */,
+				3CB9CFA81996955D0029C151 /* CJMFollowMeButtonSmall@2x.png in Resources */,
 				3C8DD980198DAAE700AC1FD4 /* banana.png in Resources */,
+				3CB9CFA71996955D0029C151 /* CJMFollowMeButtonSmall.png in Resources */,
 				3C0A3E5F198BF86700F10C7C /* 4.aiff in Resources */,
 				3C0A3E27198BD9F800F10C7C /* Images.xcassets in Resources */,
+				3CB9CFA51996955D0029C151 /* CJMFollowMeButtonLarge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +369,7 @@
 				3C8DD976198D79B500AC1FD4 /* TutorialViewController.m in Sources */,
 				3C0A3E4A198BE8F600F10C7C /* GameCenterManager.m in Sources */,
 				3C0A3E3E198BDABB00F10C7C /* ViewController.m in Sources */,
+				3CB9CFA41996955D0029C151 /* CJMTwitterFollowButton.m in Sources */,
 				3C0A3E42198BE6F800F10C7C /* MylogonAudio.m in Sources */,
 				3C0A3E4B198BE8F600F10C7C /* NSDataAES256.m in Sources */,
 				3C0A3E19198BD9F800F10C7C /* main.m in Sources */,
@@ -356,10 +395,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3C0A3E23198BD9F800F10C7C /* Main.storyboard */ = {
+		3CDBE76B1996D74000B9CAEF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				3C0A3E24198BD9F800F10C7C /* Base */,
+				3CDBE76C1996D74000B9CAEF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -448,15 +487,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = gzk/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = GZK;
-				TARGETED_DEVICE_FAMILY = 2;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -465,15 +507,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = gzk/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = GZK;
-				TARGETED_DEVICE_FAMILY = 2;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

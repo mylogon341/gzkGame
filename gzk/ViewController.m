@@ -21,6 +21,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    gameOver = NO;
+    
     [[GameCenterManager sharedManager]setDelegate:self];
     
     gameTimer = [NSTimer scheduledTimerWithTimeInterval:0.007 target:self selector:@selector(gameLoop) userInfo:nil repeats:YES];
@@ -82,9 +84,11 @@
 
     }
     
-    a1Label = [[UILabel alloc]initWithFrame:answer1Button.frame];
-    a2Label = [[UILabel alloc]initWithFrame:answer2Button.frame];
-    a3Label = [[UILabel alloc]initWithFrame:answer3Button.frame];
+    a1Label = [[UILabel alloc]initWithFrame:CGRectMake(answer1Button.frame.origin.x, answer1Button.frame.origin.y-13, answer1Button.frame.size.width, answer1Button.frame.size.height)];
+    
+    a2Label = [[UILabel alloc]initWithFrame:CGRectMake(answer2Button.frame.origin.x, answer2Button.frame.origin.y-13, answer1Button.frame.size.width, answer1Button.frame.size.height)];
+    
+    a3Label = [[UILabel alloc]initWithFrame:CGRectMake(answer3Button.frame.origin.x, answer3Button.frame.origin.y-13, answer1Button.frame.size.width, answer1Button.frame.size.height)];
     
     [a1Label setTextAlignment:NSTextAlignmentCenter];
     [a1Label setFont:[UIFont fontWithName:@"Komika Axis" size:50]];
@@ -116,7 +120,7 @@
     
     [ad loadWithSuccessHandler:^(RevMobFullscreen *fs) {
       //  [fs showAd];
-        NSLog(@"Ad loaded");
+        NSLog(@"Fullscreen Ad loaded");
     } andLoadFailHandler:^(RevMobFullscreen *fs, NSError *error) {
         NSLog(@"Ad error: %@",error);
     } onClickHandler:^{
@@ -124,8 +128,6 @@
     } onCloseHandler:^{
         NSLog(@"Ad closed");
     }];
-
-    [ad loadAd];
     
     adLoaded = NO;
     [answer1Button setNeedsUpdateConstraints];
@@ -142,7 +144,7 @@
     NSLog(@"Error: %@",error);
 }
 
--(void)revmobSessionIsStarted{
+-(void)adBannerStuff{
     
     CGRect screenBound = [[UIScreen mainScreen] bounds];
     CGSize screenSize = screenBound.size;
@@ -190,6 +192,11 @@
 }
 
 - (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex {
+    
+    if (alertView.tag == 404 && buttonIndex == 1) {
+        [self performSegueWithIdentifier:@"menu" sender:nil];
+    }
+    
     
     if (alertView.tag == 303) {
         
@@ -385,12 +392,27 @@
     return params;
 }
 
+-(IBAction)menuButton{
+    
+    NSString *text = nil;
+                      
+    if (gameOver) {
+        text = @"Do you want to return to the main menu?";
+    }else{
+        text = @"Do you want to return to the main menu? Your current game will be lost. \n😩";
+    }
+    
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Menu" message:text delegate:self cancelButtonTitle:@"Not yet!" otherButtonTitles:@"Yep!", nil];
+    alert.tag = 404;
+    [alert show];
+}
 
 
 -(void)seconds{
     
     if (!adLoaded) {
-        [self revmobSessionIsStarted];
+        [self adBannerStuff];
     }
     
     time--;
@@ -521,11 +543,33 @@
         
     }
     
+    [self pauseButtons];
+    
 }
 
+-(void)pauseButtons{
+    
+    [UIView animateWithDuration: 1.0f
+                     animations:^{
+                         if (paused) {
+                         menuButton.frame = CGRectMake(pauseButton.frame.origin.x, pauseButton.frame.origin.y + 60, 52, 30);
+                             
+                            
+                         }else{
+                        menuButton.frame = CGRectMake(-80, 5, 52, 30);
+
+                         }
+                     }
+                     completion:^(BOOL finished){
+                         
+                     }];
+    
+}
 
 -(void)gameOver{
-        
+    
+    gameOver = YES;
+    
     [UIView animateWithDuration: 1.0f
                      animations:^{
                          menuButton.frame = CGRectMake(8, 5, 52, 30);
