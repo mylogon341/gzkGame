@@ -30,10 +30,15 @@
     IBOutlet UILabel *questionLabel;
     IBOutlet UILabel *levelLabel;
     
+    IBOutlet UIImageView *bg;
+    IBOutlet UIImageView *w1;
+    IBOutlet UIImageView *w2;
+    IBOutlet UIImageView *w3;
+    
+    
     IBOutlet UIButton *answer1Button;
     IBOutlet UIButton *answer2Button;
     IBOutlet UIButton *answer3Button;
-    IBOutlet UIButton *menuButton;
     
     UILabel *a1Label;
     UILabel *a2Label;
@@ -42,6 +47,8 @@
      UIButton *panda1;
      UIButton *monkey2;
      UIButton *penguin3;
+    
+    UIButton *menuButton;
     
     IBOutlet UIButton *pauseButton;
     

@@ -21,7 +21,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    
     gameOver = NO;
+    [self.view setBackgroundColor:[UIColor blackColor]];
     
     [[GameCenterManager sharedManager]setDelegate:self];
     
@@ -57,6 +59,16 @@
     penguin3.frame = CGRectMake(517,28,112,81);
     [self.view insertSubview:penguin3 belowSubview:gameOverView];
     [penguin3 setBackgroundImage:[UIImage imageNamed:@"penguin"] forState:UIControlStateNormal];
+    
+    menuButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [menuButton addTarget:self action:@selector(menuButton) forControlEvents:UIControlEventTouchUpInside];
+    [menuButton setTitle:@"Menu" forState:UIControlStateNormal];
+    [menuButton setFrame:CGRectMake(-60, 30, 52, 30)];
+    [menuButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [menuButton setBackgroundColor:[UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.0/255.0 alpha:0.2]];
+    [self.view addSubview:menuButton];
+    
+
     
     b1Origin.y = panda1.center.y;
     b2Origin.y = monkey2.center.y;
@@ -136,6 +148,8 @@
     level = 1;
     [levelLabel setText:[NSString stringWithFormat:@"Level %d",level]];
     
+    [pauseButton.titleLabel setTextColor:[UIColor purpleColor]];
+
     [self questions];
 }
 
@@ -530,6 +544,7 @@
         monkey2.userInteractionEnabled = NO;
         penguin3.userInteractionEnabled = NO;
         paused = YES;
+
     }else{
         
         fallSpeed = tempFallFloat;
@@ -540,31 +555,45 @@
         panda1.userInteractionEnabled = YES;
         monkey2.userInteractionEnabled = YES;
         penguin3.userInteractionEnabled = YES;
-        
+        [bg setAlpha:1];
+        [w1 setAlpha:1];
+        [w2 setAlpha:1];
+        [w3 setAlpha:1];
+        [panda1 setAlpha:1];
+        [monkey2 setAlpha:1];
+        [penguin3 setAlpha:1];
+        [a1Label setAlpha:1];
+        [a2Label setAlpha:1];
+        [a3Label setAlpha:1];
     }
-    
-    [self pauseButtons];
-    
-}
-
--(void)pauseButtons{
     
     [UIView animateWithDuration: 1.0f
                      animations:^{
                          if (paused) {
-                         menuButton.frame = CGRectMake(pauseButton.frame.origin.x, pauseButton.frame.origin.y + 60, 52, 30);
-                             
-                            
+                                 menuButton.frame = CGRectMake(10, 60, 52, 30);
+                             [bg setAlpha:0.5];
+                             [w1 setAlpha:0.8];
+                             [w2 setAlpha:0.8];
+                             [w3 setAlpha:0.8];
+                             [panda1 setAlpha:0.6];
+                             [monkey2 setAlpha:0.6];
+                             [penguin3 setAlpha:0.6];
+                             [a1Label setAlpha:0.8];
+                             [a2Label setAlpha:0.8];
+                             [a3Label setAlpha:0.8];
+                             [pauseButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+
                          }else{
-                        menuButton.frame = CGRectMake(-80, 5, 52, 30);
+                             menuButton.frame = CGRectMake(-80, 5, 52, 30);
+                            [pauseButton setTitleColor:[UIColor purpleColor] forState:UIControlStateNormal];
 
                          }
                      }
                      completion:^(BOOL finished){
                          
                      }];
-    
 }
+
 
 -(void)gameOver{
     
@@ -573,7 +602,7 @@
     [UIView animateWithDuration: 1.0f
                      animations:^{
                          menuButton.frame = CGRectMake(8, 5, 52, 30);
-                         gameOverView.frame = CGRectMake(50, 286, 600, 200);
+                         gameOverView.frame = CGRectMake(53, 286, 600, 200);
                          pauseButton.center = CGPointMake(-50, 10);
 
                      }
@@ -611,7 +640,7 @@
             [[RevMobAds session]showPopup];
             break;
             case 1:
-            [self performSelector:@selector(fullscreen) withObject:nil afterDelay:0.5];
+            [self performSelector:@selector(fullscreen) withObject:nil afterDelay:1];
             break;
             case 2:
             
