@@ -7,12 +7,12 @@
 //
 #import <QuartzCore/QuartzCore.h>
 #import <UIKit/UIKit.h>
+#import "MenuViewController.h"
 
-@interface TutorialViewController : UIViewController{
+@interface TutorialViewController : UIViewController<UIAlertViewDelegate>{
     
     IBOutlet UIView *tutView;
     UILabel *tutLabel;
-    UILabel *screenNumberLabel;
     UIButton *nextButton;
     UIImageView *fingerImage;
     
@@ -26,6 +26,8 @@
     UILabel *timerLabel;
     IBOutlet UILabel *levelLabel;
     IBOutlet UILabel *wrongLabel;
+    
+    UILabel *progressLabel;
     
     IBOutlet UIImageView *bamboo;
     IBOutlet UIImageView *fish;
@@ -41,6 +43,7 @@
     int time;
     int level;
     int tutScreen;
+    int screenNumber;
     
     NSString *tutText;
     NSTimer *gameTimer;
@@ -62,7 +65,9 @@
     UIButton *panda1;
     UIButton *monkey2;
     UIButton *penguin3;
-
+    
+    IBOutlet UIButton *quitButton;
+    BOOL first;
 
 }
 

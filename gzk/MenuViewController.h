@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "GameCenterManager.h"
 #import <RevMobAds/RevMobAds.h>
+#import <QuartzCore/QuartzCore.h>
 
+NSTimer * adTimer;
 @interface MenuViewController : UIViewController<GameCenterManagerDelegate, RevMobAdsDelegate,UIAlertViewDelegate>
 {
     
-    NSTimer * adTimer;
+    
+    IBOutlet UIButton *tutButton;
+    CGRect tutButtonSize;
+    BOOL big;
     
 }
 @end

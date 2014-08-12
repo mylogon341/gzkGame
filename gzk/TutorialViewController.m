@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    adTimer = nil;
+    [adTimer invalidate];
+    
     panda1 = [[UIButton alloc]init];
     monkey2 = [[UIButton alloc]init];
     penguin3 = [[UIButton alloc]init];
@@ -67,7 +70,6 @@
     [fingerImage setImage:[UIImage imageNamed:@"finger"]];
     [self.view insertSubview:fingerImage belowSubview:tutView];
     
-    
     nextButton = [[UIButton alloc]initWithFrame:CGRectMake(385, 135, 74, 30)];
     [nextButton addTarget:self action:@selector(tutNextPressed) forControlEvents:UIControlEventTouchUpInside];
     [nextButton setBackgroundColor:[UIColor colorWithRed:45.0/255.0 green:98.0/255.0 blue:163.0/255.0 alpha:1]];
@@ -106,8 +108,6 @@
     b2Origin = monkey2.center;
     b3Origin = penguin3.center;
     
-    
-    
     panda1.userInteractionEnabled = NO;
     monkey2.userInteractionEnabled = NO;
     penguin3.userInteractionEnabled = NO;
@@ -116,10 +116,12 @@
     [pushLabel setText:[NSString stringWithFormat:@"Push Tokens: %d",pushPoints]];
     
     tutScreen = 2;
+    screenNumber = 1;
+    progressLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 5, 60, 20)];
+    [progressLabel setText:@"1/ 21"];
+    [progressLabel setTextColor:[UIColor lightTextColor]];
+    [tutView addSubview:progressLabel];
     
-    
-    
-    // Do any additional setup after loading the view.
 }
 -(BOOL)prefersStatusBarHidden{
     return YES;
@@ -127,20 +129,25 @@
 
 -(void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
+   
     
-[self performSelector:@selector(swoop) withObject:nil afterDelay:0.5];
-
+    [self performSelector:@selector(swoop) withObject:nil afterDelay:0.5];
+    
 }
 
 -(void)swoop{
     
     tutCentre = CGPointMake(350, 307.5);
+
+  //  [tutView addSubview:progressLabel];
     
     [UIView animateWithDuration: 1.0f
                      animations:^{
                          tutView.center = tutCentre;
+
                      }
                      completion:^(BOOL finished){
+                     
                      }];
 }
 
@@ -154,6 +161,7 @@
                      animations:^{
                          tutView.center = CGPointMake(tutCentre.x - 600, tutCentre.y);
                          [nextButton setAlpha:0];
+                         [progressLabel setAlpha:0];
                      }
                      completion:^(BOOL finished){
                          
@@ -167,6 +175,7 @@
                          tutView.center = tutCentre;
                          [tutLabel setAlpha:1];
                          [nextButton setAlpha:1];
+                         [progressLabel setAlpha:1];
                      }
                      completion:^(BOOL finished){
                          
@@ -551,28 +560,48 @@
                      }];
 }
 
+-(IBAction)quitButton{
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Quit" message:@"Do you want to quit the tutorial" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yeah. I'm done.", nil];
+    [alert show];
+    
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    
+    if (buttonIndex==1) {
+    [self performSegueWithIdentifier:@"menu" sender:self];
+    }
+}
+
+
 -(IBAction)tutNextPressed{
     
     
     switch (tutScreen) {
         case 2:
             tutText = @"Here I will show you how to play your new favourite game!";
+            screenNumber ++;
             break;
         case 3:
             tutText = @"It's really simple - I promise!";
+            screenNumber ++;
             break;
         case 4:
             tutText = @"Ok. At the top right you will see the question.\nHere it is 2 x 5.";
             [self questionBounce];
-            
+            screenNumber ++;
             break;
         case 5:
             tutText = @"Underneath you are given 3 answers to pick from";
+            screenNumber ++;
             break;
         case 6:
             tutText = @"From these numbers, just pick the right answer";
+            screenNumber ++;
             break;
         case 7:
+            screenNumber ++;
             tutText = @"Here. See if you can get the right answer...";
             
             answer1Button.userInteractionEnabled = YES;
@@ -589,7 +618,7 @@
             
             break;
         case 8:
-            
+            screenNumber ++;
             [UIView beginAnimations:nil context:NULL];
             [UIView setAnimationDuration:0.3];
             [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:nextButton cache:YES];
@@ -616,13 +645,16 @@
             nextButton.enabled = NO;
             tutText = @"But what's this?!\nThe animals are hungry.\nThey're on the move!";
             [self performSelector:@selector(gameTimerOn) withObject:nil afterDelay:1.5];
+            screenNumber ++;
             break;
         case 10:
             tutText = @"They're after their food.\nYou are the Greedy Zookeeper and must fend them off. Tap an animal to push it back...";
             [nextButton setTitle:@"OK" forState:UIControlStateNormal];
+            screenNumber ++;
             break;
         case 11:
-        { panda1.userInteractionEnabled = YES;
+        {
+            panda1.userInteractionEnabled = YES;
             monkey2.userInteractionEnabled = YES;
             penguin3.userInteractionEnabled = YES;
             [self unswoop];
@@ -630,7 +662,9 @@
         }
             break;
         case 12:
-        { [self performSelector:@selector(reswoop) withObject:nil afterDelay:0.2];
+        {
+            screenNumber ++;
+            [self performSelector:@selector(reswoop) withObject:nil afterDelay:0.2];
             fallSpeed = -0.1;
             panda1.userInteractionEnabled = NO;
             monkey2.userInteractionEnabled = NO;
@@ -641,9 +675,11 @@
         }
             break;
         case 13:
+            screenNumber ++;
             tutText = @"Watch out though. When you click on an animal you use a Push Token.\nWhen you run out there won't be anything to stop those animals from getting their food!!";
             break;
         case 14:
+            screenNumber ++;
             [fingerImage setCenter:CGPointMake(-100, 60)];
             tutText = @"Currently you're on level 1, see?";
             [self levelBounce];
@@ -651,23 +687,28 @@
             break;
         case 15:
             tutText = @"Every 30 seconds you level up";
-            
+            screenNumber ++;
             time = 30;
             secondTimer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(seconds) userInfo:nil repeats:YES];
             break;
         case 16:
+            screenNumber ++;
             tutText = @"Every time you level up you get 3 bonus Push Tokens";
             break;
         case 17:
+            screenNumber ++;
            tutText =@"Unfortunately the animals get more impatient and start moving towards their food even faster!";
             break;
         case 18:
+            screenNumber ++;
             tutText = @"Oh no! D:";
             break;
         case 19:
+            screenNumber ++;
             tutText = @"But it's ok. I know you can do it! ;D";
             break;
         case 20:
+            screenNumber ++;
             tutText = @"That's all there is to it!\nI told you it would be easy, didn't I?\nIt's been great having you!\nCome back soon!";
             [gameTimer invalidate];
             
@@ -700,14 +741,24 @@
     }
     
     
+    [UIView animateWithDuration:0.1 animations:^(void){
+    [progressLabel setText:[NSString stringWithFormat:@"%d/ 19",screenNumber]];
+    }];
+
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.3];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:tutLabel.viewForBaselineLayout cache:YES];
     [tutLabel setText:tutText];
     [UIView commitAnimations];
+
     
     
+    
+//    [UIView beginAnimations:nil context:NULL];
+//    [UIView setAnimationTransition:UIViewAnimationTransitionNone forView:tutView cache:YES];
+//    [UIView commitAnimations];
+
     tutScreen ++;
     
     

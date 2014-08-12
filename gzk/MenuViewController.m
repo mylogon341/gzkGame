@@ -17,7 +17,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    tutButton.clipsToBounds = YES;
     
+    CGRect screenBound = [[UIScreen mainScreen] bounds];
+    CGSize screenSize = screenBound.size;
+    CGFloat screenHeight = screenSize.height;
+    tutButtonSize = tutButton.frame;
+        
+    [self tutGlow];
     
     [[GameCenterManager sharedManager] setDelegate:self];
     
@@ -27,12 +34,72 @@
     
     if(![deviceType hasPrefix:@"iPad"])
     {
-    CJMTwitterFollowButton *largeFollowButton = [[CJMTwitterFollowButton alloc] initWithOrigin:CGPointMake(50, 50)
-                                                                                twitterAccount:@"mylogon_"
-                                                                                       andSize:CJMButtonSizeLarge];
-    [self.view addSubview:largeFollowButton];
+    CJMTwitterFollowButton *smallFollowButton = [[CJMTwitterFollowButton alloc] initWithOrigin:CGPointMake(20, screenHeight-30) twitterAccount:@"mylogon_"  andSize:CJMButtonSizeSmall];
+        
+    [self.view addSubview:smallFollowButton];
     }
 }
+
+-(void)viewDidLayoutSubviews{
+   // [fakeTutButton setCenter:tutButton.center];
+
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    UITouch *touch = [touches anyObject];
+    CGPoint touchLocation = [touch locationInView:self.view];
+
+        if ([tutButton.layer.presentationLayer hitTest:touchLocation])
+        {
+            [self tut];
+        
+    }
+}
+
+-(void)tutGlow{
+    
+    CGAffineTransform transform;
+    
+    if (big) {
+        transform = CGAffineTransformMakeScale(1.0, 1.0);
+    }else{
+        transform = CGAffineTransformMakeScale(1.1, 1.1);
+    }
+    
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:2];
+
+    [UIView animateWithDuration:2
+                     animations:^(void){
+                         
+                         [tutButton setTransform:transform];
+                         [UIView commitAnimations];
+                         
+                         if (big) {
+                             big = NO;
+                         }else{
+                             big = YES;
+                         }
+
+                         
+                     }
+                     completion:^(BOOL finished){
+                         [self tutGlow];
+                         
+                     }];
+    
+
+    
+    
+}
+
+-(void)tutReGlow{
+    
+    
+}
+
 
 -(void)ads{
     
