@@ -22,7 +22,6 @@
     CGRect screenBound = [[UIScreen mainScreen] bounds];
     CGSize screenSize = screenBound.size;
     CGFloat screenHeight = screenSize.height;
-    tutButtonSize = tutButton.frame;
         
     [self tutGlow];
     
@@ -38,11 +37,6 @@
         
     [self.view addSubview:smallFollowButton];
     }
-}
-
--(void)viewDidLayoutSubviews{
-   // [fakeTutButton setCenter:tutButton.center];
-
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event

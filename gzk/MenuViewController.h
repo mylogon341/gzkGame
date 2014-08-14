@@ -15,7 +15,7 @@ NSTimer * adTimer;
 @interface MenuViewController : UIViewController<GameCenterManagerDelegate, RevMobAdsDelegate,UIAlertViewDelegate>
 {
     
-    
+    IBOutlet UIButton *tutorialLabel;
     IBOutlet UIButton *tutButton;
     CGRect tutButtonSize;
     BOOL big;

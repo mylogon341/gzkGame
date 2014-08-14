@@ -325,10 +325,20 @@
 
 -(IBAction)answer1{
     
+    wrong++;
+    NSString *wrongstring;
+    
+    if (wrong ==1) {
+        wrongstring = @"No, That's not quite right. Try again.";
+    }else{
+        wrongstring = @"That's still not right. Try again 😊";
+    }
+    
+    
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.2];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:tutLabel.viewForBaselineLayout cache:YES];
-    [tutLabel setText:@"No. That's not quite right. Try again."];
+    [tutLabel setText:wrongstring];
     [UIView commitAnimations];
     [answer1Button setEnabled:NO];
 }
@@ -341,11 +351,19 @@
 }
 -(IBAction)answer3{
     
+    wrong++;
+    NSString *wrongstring;
+    
+    if (wrong ==1) {
+        wrongstring = @"No, That's not quite right. Try again.";
+    }else{
+        wrongstring = @"That's still not right. Try again 😊";
+    }
     
     [UIView beginAnimations:nil context:NULL];
     [UIView setAnimationDuration:0.2];
     [UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:tutLabel.viewForBaselineLayout cache:YES];
-    [tutLabel setText:@"No. That's not quite right. Try again."];
+    [tutLabel setText:wrongstring];
     [UIView commitAnimations];
     [answer3Button setEnabled:NO];
     
@@ -701,11 +719,11 @@
             break;
         case 18:
             screenNumber ++;
-            tutText = @"Oh no! D:";
+            tutText = @"Oh no! 😩";
             break;
         case 19:
             screenNumber ++;
-            tutText = @"But it's ok. I know you can do it! ;D";
+            tutText = @"But it's ok. I know you can do it! 😉";
             break;
         case 20:
             screenNumber ++;

@@ -633,18 +633,15 @@
     
     flashTimer = [NSTimer scheduledTimerWithTimeInterval:2 target:self selector:@selector(scoreOFF) userInfo:nil repeats:YES];
     
-    int adRandom = arc4random()%2;
+    int adRandom = arc4random()%1;
 
     switch (adRandom) {
         case 0:
-            [[RevMobAds session]showPopup];
             break;
             case 1:
             [self performSelector:@selector(fullscreen) withObject:nil afterDelay:1];
             break;
-            case 2:
             
-            break;
         default:
             break;
     }

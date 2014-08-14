@@ -44,6 +44,7 @@
     int level;
     int tutScreen;
     int screenNumber;
+    int wrong;
     
     NSString *tutText;
     NSTimer *gameTimer;

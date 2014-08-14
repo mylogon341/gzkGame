@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>54CE1ED4-264B-4CFA-B248-FA24BB2E1552</string>
+	<key>IDESourceControlProjectName</key>
+	<string>gzk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>26B93CE1A99471B2CF713AFF53D49D4EA74E85FE</key>
+		<string>https://github.com/mylogon341/gzkGame.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>gzk.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>26B93CE1A99471B2CF713AFF53D49D4EA74E85FE</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/mylogon341/gzkGame.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>26B93CE1A99471B2CF713AFF53D49D4EA74E85FE</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>26B93CE1A99471B2CF713AFF53D49D4EA74E85FE</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gzkGame</string>
+		</dict>
+	</array>
+</dict>
+</plist>
