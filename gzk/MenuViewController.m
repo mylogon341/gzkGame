@@ -159,11 +159,29 @@
 }
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
-    
+    sNumber=0;
 
-    if (buttonIndex == 1) {
+    if (buttonIndex == 1 && !alertView.tag == 202) {
     CJMTwitterFollowButton *button = [[CJMTwitterFollowButton alloc]init];
     [button buttonTapped];
+    }
+    
+    if (alertView.tag == 202) {
+        if (buttonIndex == 1) {
+            UITextField *textfield = [alertView textFieldAtIndex:0];
+            
+            if ([textfield.text isEqualToString:@"adblocker"]) {
+                
+                UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"ADVERTS" message:@"All adverts gone" delegate:self cancelButtonTitle:@"Cool" otherButtonTitles:nil];
+                [alert show];
+                
+                NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                [defaults setObject:@"YES"forKey:@"noads"];
+                [defaults synchronize];
+                
+            }
+        
+        }
     }
     
 }
@@ -185,6 +203,87 @@
         
     }];
 }
+
+
+-(IBAction)b1Down{
+    if (sNumber <= 0) {
+        sNumber=0;
+    }
+    sNumber++;
+    
+    if (sNumber >= 3) {
+        [self secret];
+    }
+
+}
+
+-(IBAction)b1Up{
+    
+    sNumber --;
+    
+}
+
+-(IBAction)b2Down{
+    if (sNumber <= 0) {
+        sNumber=0;
+    }
+    
+    sNumber++;
+    
+    if (sNumber >= 3) {
+        [self secret];
+    }
+}
+
+-(IBAction)b2Up{
+    sNumber--;
+}
+
+-(IBAction)b3Down{
+    
+    if (sNumber <= 0) {
+        sNumber=0;
+    }
+    sNumber++;
+    
+    if (sNumber >= 3) {
+        [self secret];
+    }
+}
+
+-(IBAction)b3Up{
+    sNumber--;
+}
+
+-(IBAction)b4Down{
+    if (sNumber <= 0) {
+        sNumber=0;
+    }
+    sNumber++;
+    
+    if (sNumber >=3) {
+        [self secret];
+    }
+}
+
+-(IBAction)b4Up{
+    sNumber--;
+}
+
+
+
+-(void)secret{
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Secret menu, ey?" message:@"So you found the secret menu. Do you know what the secret word is though?" delegate:self cancelButtonTitle:@"...no" otherButtonTitles:@"YES", nil];
+    alert.tag = 202;
+    
+    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+    
+    [alert show];
+    
+    
+}
+
 
 -(void)gameCenterViewControllerDidFinish:(GKGameCenterViewController *)gameCenterViewController{
     [gameCenterViewController dismissViewControllerAnimated:YES completion:nil];

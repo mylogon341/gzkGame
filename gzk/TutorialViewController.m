@@ -118,7 +118,7 @@
     tutScreen = 2;
     screenNumber = 1;
     progressLabel = [[UILabel alloc]initWithFrame:CGRectMake(5, 5, 60, 20)];
-    [progressLabel setText:@"1/ 21"];
+    [progressLabel setText:@"1/ 19"];
     [progressLabel setTextColor:[UIColor lightTextColor]];
     [tutView addSubview:progressLabel];
     
@@ -727,7 +727,7 @@
             break;
         case 20:
             screenNumber ++;
-            tutText = @"That's all there is to it!\nI told you it would be easy, didn't I?\nIt's been great having you!\nCome back soon!";
+            tutText = @"That's all there is to it!\nI told you it would be easy, didn't I?\nIt's been great having you, so come back soon!";
             [gameTimer invalidate];
             
             [nextButton setTitle:@"Finish" forState:UIControlStateNormal];

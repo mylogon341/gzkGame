@@ -197,7 +197,7 @@
 
 -(void)socialShit{
     
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Share with a friend" message:@"How would you like to share?" delegate:self cancelButtonTitle:@"I've changed my mind.." otherButtonTitles:@"Facebook!",@"Twitter!", nil];
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Share with a friend" message:@"How would you like to share?" delegate:self cancelButtonTitle:@"Facebook!" otherButtonTitles:@"Twitter!",@"I've Changed my mind...", nil];
     
     alert.tag = 202;
     
@@ -244,7 +244,7 @@
     if (alertView.tag == 202) {
         
         //facebook
-        if (buttonIndex == 1) {
+        if (buttonIndex == 0) {
             
             
             // Check if the Facebook app is installed and we can present the share dialog
@@ -330,7 +330,7 @@
         
         
         //twitter
-        if (buttonIndex == 2) {
+        if (buttonIndex == 1) {
             {
                 //  Create an instance of the Tweet Sheet
                 SLComposeViewController *tweetSheet = [SLComposeViewController
@@ -594,21 +594,25 @@
                      }];
 }
 
-
--(void)gameOver{
-    
-    gameOver = YES;
+-(void)goMenu{
     
     [UIView animateWithDuration: 1.0f
                      animations:^{
                          menuButton.frame = CGRectMake(8, 5, 52, 30);
                          gameOverView.frame = CGRectMake(53, 286, 600, 200);
                          pauseButton.center = CGPointMake(-50, 10);
-
+                         
                      }
                      completion:^(BOOL finished){
                          
                      }];
+}
+
+-(void)gameOver{
+    
+    [self performSelector:@selector(goMenu) withObject:nil afterDelay:0.5];
+    
+    gameOver = YES;
     
     answer1Button.enabled = NO;
     answer2Button.enabled = NO;

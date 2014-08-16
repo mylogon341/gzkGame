@@ -20,5 +20,22 @@ NSTimer * adTimer;
     CGRect tutButtonSize;
     BOOL big;
     
+    int sNumber;
+    
+    IBOutlet UIButton *b1;
+    IBOutlet UIButton *b2;
+    IBOutlet UIButton *b3;
+    IBOutlet UIButton *b4;
+    
 }
+
+-(IBAction)b1Down;
+-(IBAction)b2Down;
+-(IBAction)b3Down;
+-(IBAction)b4Down;
+
+-(IBAction)b1Up;
+-(IBAction)b2Up;
+-(IBAction)b3Up;
+-(IBAction)b4Up;
 @end

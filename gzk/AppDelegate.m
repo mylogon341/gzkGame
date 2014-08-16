@@ -18,8 +18,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [[GameCenterManager sharedManager]setupManager];
+    
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if([[defaults objectForKey:@"noads"]isEqualToString:@"YES"]){
+        }else{
     [RevMobAds startSessionWithAppID:@"53dbdb4fa6b472dc066a1ed3"];
-
+        }
+    
     return YES;
 }
 
